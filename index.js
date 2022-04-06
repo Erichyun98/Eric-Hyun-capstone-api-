@@ -17,7 +17,7 @@ let tasks = [
         startdate: "04/20/22",
         enddate: "04/25/22",
         time: "11:59 AM",
-        id: "1",
+        id: "1"
     },
     {
         tasktitle: "Reading a book",
@@ -25,7 +25,7 @@ let tasks = [
         startdate: "04/14/22",
         enddate: "04/26/22",
         time: "12:00 PM",
-        id: "2",
+        id: "2"
     },
     {
         tasktitle: "No junk food",
@@ -33,7 +33,7 @@ let tasks = [
         startdate: "04/16/22",
         enddate: "04/24/22",
         time: "11:59 PM",
-        id: "3",
+        id: "3"
     },
     {
         tasktitle: "Finishing capstone project",
@@ -41,7 +41,7 @@ let tasks = [
         startdate: "04/01/22",
         enddate: "04/10/22",
         time: "11:59 PM",
-        id: "4",
+        id: "4"
     }
 ];
 
@@ -68,6 +68,10 @@ app.delete('/task/delete/:id', (req,res)=> {
     console.log(tasks);
     res.json(tasks)
 })
+ 
+// const taskRoutes = require('./routes/task');
+// app.use('/task', taskRoutes)
+
 
 app.listen(PORT, () => { 
     console.log(PORT + ' is running')
